@@ -1,14 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "react-bootstrap";
+import Layout from "./layouts/Layout";
 
 function App() {
   return (
-    <div className="App">
-      <div className = "black-nav">
-        <div style = { { color : 'blue', fontSize : '30px'} }>개발 블로그</div>
-      </div>
-    </div>
+    <Layout>
+      <Container style={{ minHeight: "100vh" }}>App</Container>
+    </Layout>
   );
 }
 
